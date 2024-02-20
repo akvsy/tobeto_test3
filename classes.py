@@ -24,7 +24,7 @@ class Human():
     def Age(self,age):
         return age
     
-    
+
 
     def talk(self, message):
         print(message)
@@ -43,3 +43,4 @@ human1.walk()
 #ismini yaşını değiştirip özellik atayabilirim.
         
 #python da yapıcı bloğun adı init
+
