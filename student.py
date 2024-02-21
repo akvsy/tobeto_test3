@@ -6,26 +6,18 @@
 # Listeye ekleme yapan, listedeki tüm elemanları ekrana yazan fonksiyonları geliştirelim ve konsolda test edelim.
 
 class Student:
-    def __init__(self, isim, soyisim):
+    def __init__(self, isim, soyisim,vize,final):
         self.isim= isim
         self.soyisim= soyisim
-        
+        self.vize=vize
+        self.final=final
     
     def bilgi(self):
         print(f"öğrenci adı: {self.isim}, soyadı: {self.soyisim}")
     
-    def ortalamaHesaplama(self, vize, final):
-        ortalama= (vize*0.4) + (final*0.6)
-        print(f"Ortalamanız: {ortalama}")
-
-student1= Student("ayşe", "yılmaz")
-student2= Student("ali", "kaya")
-student1.bilgi()
-student1.ortalamaHesaplama(70, 80)
-student2.bilgi()
-student2.ortalamaHesaplama(50, 100)
-
-    
+    def ortalamaHesaplama(self):
+        ortalama= (self.vize*0.4) + (self.final*0.6)
+        return ortalama
 
     
         
